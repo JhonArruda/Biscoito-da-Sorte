@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+:root {
+	font-size: 62.5%;
+}
+
 body {
     background: linear-gradient(45deg, #190361, #bb00ff);
-	animation: gradient 10s ease infinite;
-    background-size: 200% 200%;
-}
+		animation: gradient 10s ease infinite;
+    background-size: 200vh;
+	font-size: 1.6rem;
+
+	display: grid;
+	place-items: center;
+  }
 
 @keyframes gradient {
 	0% {
@@ -21,3 +29,42 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+main {
+	background: #ffffff;
+	box-shadow: 0px 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+	border-radius: 0.6rem;
+	margin: 21.3rem;
+	padding: 5rem;  
+	width: min(45.8rem, 90%);
+	margin: 1,7rem;
+  
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+h1 img button {
+	margin: 1.7rem;
+}
+
+button {
+    background-color: #FF9500;
+    color: white;
+    border: none;
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding: 1.6rem;
+	margin-top: 4rem;
+    cursor: pointer;
+	
+	
+    transition: background 0.3s;
+}
+  
+button:hover {
+    background-color: #f0be93;
+}
+

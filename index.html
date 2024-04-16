@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biscoito da Sorte</title>
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
-    <div id="screen1">
-        <h1>Qual é a sua sorte <br>
-            de hoje?
-        </h1>
+    <main>
+         <div class="screen1 hide">
+            <h1>Qual é a sua sorte <br>de hoje?</h1>
+            <h3>abra o biscoito e descubra</h3>
+            <img src="assets/fortune-cookie.png" alt="biscoito da sorte" id="luck">
+        </div>
 
-        <h3>abra o biscoito e descubra</h3>
-        <img src="assets/fortune-cookie.png" alt="biscoito da sorte">
-    </div>
-
-    <div id="screen2">
-        <h1>Aqui está sua sorte de hoje:</h1>
-        <section>mensagem</section>
-        <img src="./assets/opened-cookie.png" alt="">
-        <button type="button" >Abrir outro biscoito</button>
-
-    
+        <div class="screen2">
+            <h1>Aqui está a sua sorte <br>de hoje:</h1>
+            <section ></section>
+            <img src="assets/opened-cookie.png" alt="biscoito da sorte aberto">
+            <button id="btnAgain">Receber outro biscoito</button>
+        </div>
+    </main>
+    <script src="./main.js"></script>
 </body>
 </html>
