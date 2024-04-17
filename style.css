@@ -32,14 +32,19 @@ body {
 
 main {
 	background: #ffffff;
-	box-shadow: 0px 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+	box-shadow: -20px 2rem 0.4rem rgba(0, 0, 0, 0.1);
 	border-radius: 0.6rem;
 	margin: 21.3rem;
 	padding: 5rem;  
 	width: min(45.8rem, 90%);
-	margin: 1,7rem;
+	height: min(45.8rem, 90%);
   
 	text-align: center;
+}
+
+.screen1 {
+	cursor: pointer;
+
 }
 
 .hide {
@@ -48,6 +53,7 @@ main {
 
 h1 img button {
 	margin: 1.7rem;
+	padding-bottom: 1.7rem;
 }
 
 button {
@@ -67,4 +73,18 @@ button {
 button:hover {
     background-color: #f0be93;
 }
+
+#luck {
+	animation: shake 0.1s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;	
+  }
+  
+	@keyframes shake {
+	0% {margin-left: 0;}
+	25% {margin-left: 5px;}
+	50% {margin-left: 0;}
+	75% {margin-left: -5px;}
+	100% {margin-left: 0;}
+  }
 
